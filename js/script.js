@@ -17,3 +17,27 @@ toggle?.addEventListener('click', () => {
   localStorage.setItem('theme', next);
   toggle.textContent = next === 'dark' ? '☀️' : '🌙';
 });
+
+
+
+
+
+
+const menuToggle = document.querySelector('.menu-toggle');
+const menuLinks = document.querySelector('.menu-links');
+
+menuToggle?.addEventListener('click', () => {
+  menuLinks.classList.toggle('open');
+
+  const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+  menuToggle.setAttribute('aria-expanded', !expanded);
+});
+
+
+document.querySelectorAll('.menu-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    menu.classList.remove('open');
+  });
+});
+
+
