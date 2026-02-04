@@ -1,10 +1,3 @@
-Perfeito, Rafael. Vou criar um **README profissional**, alinhado com o **nível do seu portfólio**, sua stack e tudo que construímos nesse histórico (UI limpa, foco em backend/dados, JS puro, responsivo, dark/light).
-
-Você pode **copiar e colar direto no GitHub**.
-
----
-
-````md
 # 🌐 Portfólio Profissional — Rafael Atala Pulzi
 
 Bem-vindo ao repositório do meu **portfólio profissional**.  
@@ -47,7 +40,6 @@ Tenho experiência com desenvolvimento de sistemas, análise de dados, arquitetu
 
 ## 📂 Estrutura do Projeto
 
-```txt
 portifolio/
 │
 ├── index.html
@@ -67,9 +59,6 @@ portifolio/
 ├── images/
 │
 └── README.md
-````
-
----
 
 ## 📌 Seções do Portfólio
 
@@ -81,11 +70,10 @@ portifolio/
 
 Cada seção foi pensada para ser objetiva, visualmente agradável e fácil de navegar.
 
----
+----------------------------------------------------------------------------------------------
 
 ## 🚀 Como executar localmente
 
-```bash
 # Clone o repositório
 git clone https://github.com/RafaelPulzi/portifolio.git
 
@@ -93,9 +81,8 @@ git clone https://github.com/RafaelPulzi/portifolio.git
 cd portifolio
 
 # Abra o index.html no navegador
-```
 
----
+----------------------------------------------------------------------------------------------
 
 ## 📫 Contato
 
@@ -103,28 +90,10 @@ cd portifolio
 * 📧 Email: *rafaelpulzi.profissional@gmail.com*
 * 🌐 Portfólio: [https://rafaelpulzi.github.io/portifolio](https://rafaelpulzi.github.io/portifolio)
 
----
 
 ## 📄 Licença
 
 Este projeto é de uso pessoal e profissional.
 Sinta-se à vontade para se inspirar, mas não para copiar integralmente.
 
----
 
-⭐ Se este repositório te ajudou de alguma forma, considere deixar uma estrela!
-
-```
-
----
-
-## 🔥 Quer que eu evolua mais?
-
-Posso:
-- Adaptar o README para **recrutadores**
-- Criar uma versão **bilíngue (PT/EN)**
-- Ajustar para **LinkedIn / currículo**
-- Escrever um **README focado em Frontend** ou **Backend**
-
-É só dizer 👍
-```
