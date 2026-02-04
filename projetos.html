@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Projetos | Rafael Atala Pulzi</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styleProjetos.css">
+</head>
+
+<body>
+  <!-- ================= HEADER / NAV ================= -->
+  <header>
+    <nav class="menu" aria-label="Menu principal">
+      <div class="menu-container">
+        <a class="logo" href="index.html">Rafael Atala Pulzi</a>
+
+        <ul class="menu-links">
+          <li>
+            <button
+              id="themeToggle"
+              class="theme-toggle"
+              aria-label="Alternar tema">
+              🌙
+            </button>
+          </li>
+
+          <li>
+            <a
+              href="images/Curriculo Rafael Atala Pulzi  +55 11 96477-0108.pdf"
+              target="_blank"
+              rel="noopener noreferrer">
+              Currículo
+            </a>
+          </li>
+
+          <li><a href="projetos.html" aria-current="page">Projetos</a></li>
+          <li><a href="Certificados.html">Certificados</a></li>
+          <li><a href="#contato" class="highlight">Contate-me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ================= MAIN ================= -->
+  <main class="page-container">
+    
+    <!-- ================= PROJETOS ================= -->
+    <section id="projetos" class="section" aria-labelledby="titulo-projetos">
+      <header class="page-header">
+        <h1 id="titulo-projetos">Projetos</h1>
+        <p>Catálogo de projetos com foco em backend e análise de dados.</p>
+      </header>
+
+      <!-- FILTROS -->
+      <div class="filters" role="search" aria-label="Filtros de projetos">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Buscar projeto pelo nome..."
+          aria-label="Buscar projeto" />
+
+        <select
+          id="techFilter"
+          aria-label="Filtrar projetos por tecnologia">
+          <option value="">Todas as tecnologias</option>
+          <option value="Python">Python</option>
+          <option value="Backend">Backend</option>
+          <option value="Data">Data</option>
+          <option value="API">API</option>
+          <option value="Banco de Dados">Banco de Dados</option>
+        </select>
+      </div>
+
+      <!-- CATÁLOGO -->
+      <div
+        class="catalog"
+        id="projectCatalog"
+        role="list"
+        aria-live="polite">
+      </div>
+    </section>
+
+    <!-- ================= SEÇÕES FUTURAS ================= -->
+    <section id="certificados" aria-hidden="true"></section>
+    <section id="experiencia" aria-hidden="true"></section>
+    <section id="contato" aria-hidden="true"></section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    © <span id="year"></span> Rafael Atala Pulzi · Portfólio Profissional
+  </footer>
+
+  <!-- ================= SCRIPTS ================= -->
+  <script src="js/script.js"></script>
+  <script src="js/scriptProjetos.js"></script>
+</body>
+</html>

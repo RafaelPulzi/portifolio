@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Certificados | Rafael Atala Pulzi</title>
+
+  <meta name="description" content="Certificados e formações profissionais de Rafael Atala Pulzi, desenvolvedor backend e analista de dados." />
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styleCertificados.css">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="menu" aria-label="Navegação principal">
+    <div class="menu-container">
+      <a class="logo" href="index.html">Rafael Atala Pulzi</a>
+      <ul class="menu-links">
+        <li><button id="themeToggle" class="theme-toggle" aria-label="Alternar tema">
+          🌙
+        </button></li>
+        <li><a href="images/Curriculo Rafael Atala Pulzi  +55 11 96477-0108.pdf" target="_blank">Currículo</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="certificados.html" aria-current="page">Certificados</a></li>
+        <li><a href="#contato" class="highlight">Contate-me</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- CONTEÚDO -->
+  <main class="page-container">
+
+    <header class="page-header">
+      <h1>Certificados</h1>
+      <p>Certificações e formações relevantes para minha atuação profissional.</p>
+    </header>
+
+    <!-- FILTROS -->
+    <section class="certificates-controls" aria-label="Filtros de certificados">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Buscar por nome, tecnologia ou instituição..."
+        aria-label="Buscar certificado"
+      />
+
+      <select id="yearFilter" aria-label="Filtrar por ano">
+        <option value="">Todos os anos</option>
+      </select>
+
+      <div id="techFilters" class="tech-filters" aria-label="Filtros por tecnologia"></div>
+    </section>
+
+    <!-- GRID + SETAS -->
+    <section class="certificates-carousel" aria-label="Lista de certificados">
+
+      <button class="carousel-btn left" id="prevBtn" aria-label="Anterior">
+        ‹
+      </button>
+
+      <div class="certificates-viewport">
+        <div class="certificates-grid" id="certificatesGrid"></div>
+      </div>
+
+      <button class="carousel-btn right" id="nextBtn" aria-label="Próximo">
+        ›
+      </button>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    © <span id="year"></span> Rafael Atala Pulzi · Portfólio Profissional
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/scriptCertificados.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+</body>
+</html>

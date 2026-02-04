@@ -1,0 +1,137 @@
+[
+  {
+    "id": "1-simposio-interno-de-sustentabilidade-e-tecnologia-unip",
+    "nome": "1 simposio interno de sustentabilidade e tecnologia UNIP",
+    "descricao": "Certificação profissional.",
+    "tecnologias": [
+      "Inteligência Artificial"
+    ],
+    "instituicao": "",
+    "ano": "",
+    "arquivo": "/images/certificados/1 simposio interno de sustentabilidade e tecnologia UNIP.pdf",
+    "imagem": "/images/certificadosImagens/1 simposio interno de sustentabilidade e tecnologia UNIP.webp"
+  },
+  {
+    "id": "2-simposio-interno-de-sustentabilidade-e-tecnologia-unip",
+    "nome": "2 simposio interno de sustentabilidade e tecnologia UNIP",
+    "descricao": "Certificação profissional.",
+    "tecnologias": [
+      "Inteligência Artificial"
+    ],
+    "instituicao": "",
+    "ano": "",
+    "arquivo": "/images/certificados/2 simposio interno de sustentabilidade e tecnologia UNIP.pdf",
+    "imagem": "/images/certificadosImagens/2 simposio interno de sustentabilidade e tecnologia UNIP.webp"
+  },
+  {
+    "id": "3-simposio-interno-de-sustentabilidade-e-tecnologia-unip",
+    "nome": "3 simposio interno de sustentabilidade e tecnologia UNIP",
+    "descricao": "Certificação profissional.",
+    "tecnologias": [
+      "Inteligência Artificial"
+    ],
+    "instituicao": "",
+    "ano": "",
+    "arquivo": "/images/certificados/3 simposio interno de sustentabilidade e tecnologia UNIP.png",
+    "imagem": "/images/certificadosImagens/3 simposio interno de sustentabilidade e tecnologia UNIP.webp"
+  },
+  {
+    "id": "certificado-data-viking",
+    "nome": "Certificado Data Viking",
+    "descricao": "Certificação profissional.",
+    "tecnologias": [
+      "Data"
+    ],
+    "instituicao": "",
+    "ano": "",
+    "arquivo": "/images/certificados/Certificado Data Viking.pdf",
+    "imagem": "/images/certificadosImagens/Certificado Data Viking.webp"
+  },
+  {
+    "id": "certificado-linguagem-de-programacao-java---basico---5h",
+    "nome": "Certificado Linguagem de Programacao Java   basico   5h",
+    "descricao": "Certificação profissional.",
+    "tecnologias": [
+      "Java"
+    ],
+    "instituicao": "",
+    "ano": "",
+    "arquivo": "/images/certificados/Certificado Linguagem de Programacao Java - basico - 5h.pdf",
+    "imagem": "/images/certificadosImagens/Certificado Linguagem de Programacao Java - basico - 5h.webp"
+  },
+  {
+    "id": "certificadopoobradesco-5-horas",
+    "nome": "CertificadoPOObradesco 5 horas",
+    "descricao": "Certificação profissional.",
+    "tecnologias": [],
+    "instituicao": "",
+    "ano": "",
+    "arquivo": "/images/certificados/CertificadoPOObradesco-5 horas.pdf",
+    "imagem": "/images/certificadosImagens/CertificadoPOObradesco-5 horas.webp"
+  },
+  {
+    "id": "cs50-harvard",
+    "nome": "CS50 Harvard",
+    "descricao": "Certificação profissional.",
+    "tecnologias": [],
+    "instituicao": "",
+    "ano": "",
+    "arquivo": "/images/certificados/CS50 Harvard.pdf",
+    "imagem": "/images/certificadosImagens/CS50 Harvard.webp"
+  },
+  {
+    "id": "curso-além-da-genética---fabricio-pacholok",
+    "nome": "Curso Além da Genética   Fabricio Pacholok",
+    "descricao": "Certificação profissional.",
+    "tecnologias": [],
+    "instituicao": "",
+    "ano": "",
+    "arquivo": "/images/certificados/Curso Além da Genética - Fabricio Pacholok.pdf",
+    "imagem": "/images/certificadosImagens/Curso Além da Genética - Fabricio Pacholok.webp"
+  },
+  {
+    "id": "discovery-trilha-conectar",
+    "nome": "Discovery Trilha Conectar",
+    "descricao": "Certificação profissional.",
+    "tecnologias": [],
+    "instituicao": "",
+    "ano": "",
+    "arquivo": "/images/certificados/Discovery Trilha Conectar.pdf",
+    "imagem": "/images/certificadosImagens/Discovery Trilha Conectar.webp"
+  },
+  {
+    "id": "fundamentos-de-business-intelligence-(bi)",
+    "nome": "Fundamentos de Business Intelligence (BI)",
+    "descricao": "Certificação profissional.",
+    "tecnologias": [],
+    "instituicao": "",
+    "ano": "",
+    "arquivo": "/images/certificados/Fundamentos de Business Intelligence (BI).pdf",
+    "imagem": "/images/certificadosImagens/Fundamentos de Business Intelligence (BI).webp"
+  },
+  {
+    "id": "machine-learning-e-data-science-com-python-de-a-a-z",
+    "nome": "Machine Learning e Data Science com Python de A a Z",
+    "descricao": "Certificação profissional.",
+    "tecnologias": [
+      "Python",
+      "Data"
+    ],
+    "instituicao": "",
+    "ano": "",
+    "arquivo": "/images/certificados/Machine Learning e Data Science com Python de A a Z.pdf",
+    "imagem": "/images/certificadosImagens/Machine Learning e Data Science com Python de A a Z.webp"
+  },
+  {
+    "id": "master-network-automation-with-python-for-network-engineers",
+    "nome": "Master Network Automation with Python for Network Engineers",
+    "descricao": "Certificação profissional.",
+    "tecnologias": [
+      "Python"
+    ],
+    "instituicao": "",
+    "ano": "",
+    "arquivo": "/images/certificados/Master Network Automation with Python for Network Engineers.pdf",
+    "imagem": "/images/certificadosImagens/Master Network Automation with Python for Network Engineers.webp"
+  }
+]

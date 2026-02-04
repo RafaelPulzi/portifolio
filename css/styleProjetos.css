@@ -1,0 +1,119 @@
+    .filters {
+      display: flex;
+      gap: 1rem;
+      margin: 1.5rem 0;
+      flex-wrap: wrap;
+    }
+
+    .filters input,
+    .filters select {
+      background: var(--input-bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 0.6rem 1rem; 
+      border-radius: 12px; 
+      outline: none;
+    }
+
+
+    .catalog {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    }
+
+    /* Responsividade */
+    @media (max-width: 1200px) {
+    .catalog {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    }
+
+    @media (max-width: 900px) {
+    .catalog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    }
+
+    @media (max-width: 500px) {
+    .catalog {
+        grid-template-columns: 1fr;
+    }
+    }
+
+
+
+.project-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 1.4rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: transform .25s ease, box-shadow .25s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+}
+
+.project-card h3 {
+  font-size: 1rem;
+  margin-bottom: .4rem;
+}
+
+.project-card p {
+  font-size: .9rem;
+  color: var(--muted);
+}
+
+/* TAGS */
+.project-tags {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+}
+
+.project-tags span {
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  border: 1px solid var(--tag-border);
+  padding: .3rem .7rem;
+  border-radius: 999px;
+  font-size: .75rem;
+  font-weight: 500;
+  transition: background .25s ease, color .25s ease, border .25s ease;
+}
+
+
+
+
+
+    /* ================= CONTAINER ================= */
+.page-container {
+  max-width: 1200px;
+  margin: 120px auto 4rem;
+  padding: 0 2rem;
+}
+
+/* ================= GRID PROJETOS ================= */
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.8rem;
+}
+
+/* ================= RESPONSIVO ================= */
+@media (max-width: 1200px) {
+  .catalog {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .catalog {
+    grid-template-columns: 1fr;
+  }
+}

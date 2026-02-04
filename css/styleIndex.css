@@ -1,0 +1,169 @@
+/* ================= HERO / PROFILE ================= */
+
+.container.hero {
+  max-width: 1320px;
+  padding: 4.5rem 5rem;
+
+  display: grid;
+  grid-template-columns: minmax(280px, 320px) 1fr;
+  gap: 4rem;
+}
+
+
+/* ================= PROFILE ================= */
+
+.profile {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px dashed var(--accent);
+  margin: 0 auto 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 0 0 8px rgba(56,189,248,0.06);
+}
+
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.role {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--accent);
+  margin-bottom: 1.2rem;
+}
+
+/* ================= TYPEWRITER ================= */
+
+.typewriter-wrapper {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.typewriter {
+  display: inline-block;
+  max-width: 260px;
+  text-align: center;
+
+  color: var(--muted);
+  font-style: italic;
+
+  line-height: 1.5;
+  white-space: normal;
+}
+
+/* Cursor */
+.typewriter::after {
+  content: '|';
+  display: inline-block;
+  margin-left: 4px;
+
+  height: 1em;              
+  line-height: 1em;
+  vertical-align: baseline;
+
+  color: var(--accent);
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+
+/* ================= CONTENT ================= */
+
+.content section {
+  margin-bottom: 3.5rem;
+}
+
+.content h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.content p {
+  color: var(--text);
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+/* ================= TAGS ================= */
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.2rem;
+}
+
+.tag {
+  padding: 0.45rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+
+  border-radius: 999px;
+  border: 1px solid rgba(56,189,248,0.35);
+
+  color: var(--accent);
+  background: rgba(56,189,248,0.08);
+
+  transition: 
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.tag:hover {
+  background: rgba(56,189,248,0.15);
+  box-shadow: 0 6px 16px rgba(56,189,248,0.2);
+  transform: translateY(-1px);
+}
+
+/* ================= FOOTER ================= */
+
+.site-footer {
+  margin-top: 4rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  .container.hero {
+    grid-template-columns: 1fr;
+    padding: 2.5rem 2rem;
+    gap: 3rem;
+  }
+
+  .profile {
+    padding-top: 0;
+  }
+
+  .content section {
+    margin-bottom: 3rem;
+  }
+}
