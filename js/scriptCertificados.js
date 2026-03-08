@@ -73,18 +73,12 @@ function aplicarFiltros() {
 }
 
 /* ================= RENDER ================= */
-async function render() {
+function render() {
+
   grid.innerHTML = '';
 
-  const inicio = pagina * porPagina;
-  const slice = filtrados.slice(inicio, inicio + porPagina);
+  filtrados.forEach(c => {
 
-  if (!slice.length) {
-    grid.innerHTML = '<p style="color:var(--muted)">Nenhum certificado encontrado.</p>';
-    return;
-  }
-
-  for (const c of slice) {
     const card = document.createElement('article');
     card.className = 'certificate-card';
 
@@ -92,7 +86,7 @@ async function render() {
     thumb.className = 'certificate-image';
 
     const img = document.createElement('img');
-    img.src = c.imagem;         
+    img.src = c.imagem;
     img.alt = c.nome;
     img.loading = 'lazy';
 
@@ -104,12 +98,15 @@ async function render() {
       <p>${c.descricao}</p>
     `;
 
-
     gerarThumbnail(c.arquivo, img);
 
     card.onclick = () => window.open(c.arquivo, '_blank');
+
     grid.appendChild(card);
-  }
+
+  });
+
+  atualizarSlide();
 }
 
 async function gerarThumbnail(arquivo, imgEl) {
@@ -156,13 +153,13 @@ async function gerarThumbnail(arquivo, imgEl) {
 /* ================= NAV ================= */
 prevBtn.onclick = () => {
   pagina--;
-  render();
+  atualizarSlide();
   updateButtons();
 };
 
 nextBtn.onclick = () => {
   pagina++;
-  render();
+  atualizarSlide();
   updateButtons();
 };
 
@@ -174,3 +171,57 @@ function updateButtons() {
 /* ================= EVENTS ================= */
 searchInput.addEventListener('input', aplicarFiltros);
 yearFilter.addEventListener('change', aplicarFiltros);
+
+
+
+function atualizarSlide(){
+
+  const viewport = document.querySelector(".certificates-viewport");
+  const largura = viewport.offsetWidth;
+
+  grid.style.transform = `translateX(-${pagina * largura}px)`;
+
+}
+
+
+/* ================= MOBILE ================= */
+let touchStartX = 0;
+let touchEndX = 0;
+
+const viewport = document.querySelector(".certificates-viewport");
+
+viewport.addEventListener("touchstart", (e) => {
+  touchStartX = e.changedTouches[0].screenX;
+});
+
+viewport.addEventListener("touchend", (e) => {
+  touchEndX = e.changedTouches[0].screenX;
+  handleSwipe();
+});
+
+
+function handleSwipe(){
+
+  const distancia = touchEndX - touchStartX;
+
+  if (Math.abs(distancia) < 50) return; // evita swipe pequeno
+
+  if (distancia < 0){
+    // swipe para esquerda → próximo
+    if((pagina + 1) * porPagina < filtrados.length){
+      pagina++;
+      atualizarSlide();
+      updateButtons();
+    }
+  }
+
+  if (distancia > 0){
+    // swipe para direita → anterior
+    if(pagina > 0){
+      pagina--;
+      atualizarSlide();
+      updateButtons();
+    }
+  }
+
+}

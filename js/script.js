@@ -1,43 +1,61 @@
-document.getElementById('year').textContent = new Date().getFullYear();
+// Atualizar ano
+document.getElementById('year').textContent =
+  new Date().getFullYear();
 
-const toggle = document.getElementById('themeToggle');
+const toggle = document.getElementById('dark-toggle');
 const root = document.documentElement;
 
+/* ========================
+   INICIAR EM MODO CLARO
+======================== */
+root.setAttribute('data-theme', 'light');
+toggle.checked = false;
+
+/* ========================
+   Carregar tema salvo
+======================== */
 const savedTheme = localStorage.getItem('theme');
-if (savedTheme) {
-  root.setAttribute('data-theme', savedTheme);
-  toggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+
+if (savedTheme === 'dark') {
+  enableDark();
+  toggle.checked = true;
 }
 
-toggle?.addEventListener('click', () => {
-  const current = root.getAttribute('data-theme');
-  const next = current === 'dark' ? 'light' : 'dark';
-
-  root.setAttribute('data-theme', next);
-  localStorage.setItem('theme', next);
-  toggle.textContent = next === 'dark' ? '☀️' : '🌙';
+/* ========================
+   Alternar tema
+======================== */
+toggle.addEventListener('change', () => {
+  if (toggle.checked) {
+    enableDark();
+  } else {
+    disableDark();
+  }
 });
 
+function enableDark() {
+  root.setAttribute('data-theme', 'dark');
+  root.classList.add('dark-active');
+  localStorage.setItem('theme', 'dark');
+}
 
+function disableDark() {
+  root.setAttribute('data-theme', 'light');
+  root.classList.remove('dark-active');
+  localStorage.setItem('theme', 'light');
+}
 
-
-
-
+/* ========================
+   Menu Mobile
+======================== */
 const menuToggle = document.querySelector('.menu-toggle');
 const menuLinks = document.querySelector('.menu-links');
 
 menuToggle?.addEventListener('click', () => {
   menuLinks.classList.toggle('open');
-
-  const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
-  menuToggle.setAttribute('aria-expanded', !expanded);
 });
-
 
 document.querySelectorAll('.menu-links a').forEach(link => {
   link.addEventListener('click', () => {
-    menu.classList.remove('open');
+    menuLinks.classList.remove('open');
   });
 });
-
-

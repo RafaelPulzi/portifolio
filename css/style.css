@@ -40,8 +40,116 @@
 body {
   background: var(--bg);
   color: var(--text);
-  transition: background .3s, color .3s;
+  line-height: 1.7;
+  font-size: 1rem;
+  transition:
+    background 0.7s ease,
+    color 0.7s ease;
 }
+
+h1 {
+  font-size: clamp(1.8rem, 2.5vw, 2.4rem);
+}
+
+h2 {
+  font-size: clamp(1.3rem, 2vw, 1.6rem);
+}
+
+.role {
+  font-size: 1.05rem;
+  color: var(--muted);
+}
+
+html {
+  font-size: clamp(100%, 1.1vw + 0.5rem, 118%);
+}
+
+.container.hero,
+nav.menu,
+.site-footer {
+  transition: background 0.7s ease, border 0.7s ease;
+}
+
+
+.darkmodeLabel {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.darkmodeinput {
+  position: absolute;
+  opacity: 0;
+}
+
+.darkmodeSun {
+  position: absolute;
+  width: 22px;
+  transition: transform 1s ease, opacity 0.6s ease;
+  transform: rotate(0deg) scale(1);
+  opacity: 1;
+}
+
+.darkmodeinput:checked ~ .darkmodeSun {
+  transform: rotate(180deg) scale(0);
+  opacity: 0;
+}
+
+
+.darkmodeMoon {
+  position: absolute;
+  width: 22px;
+  transition: transform 1s ease, opacity 0.6s ease;
+  transform: rotate(-180deg) scale(0);
+  opacity: 0;
+  fill: #eff6ff
+}
+
+.darkmodeinput:checked ~ .darkmodeMoon {
+  transform: rotate(0deg) scale(1);
+  opacity: 1;
+}
+
+
+
+.darkmodeToggle {
+  position: absolute;
+  display: block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-shadow: 
+    inset 0 8 60px rgba(0,0,0, .1),
+    inset 0 8 8px rgba(0,0,0, .1),
+    inset 0 -4 4px rgba(0,0,0, .1);
+  z-index: -1;
+  transition: 1s;
+}
+
+.darkmodeinput:checked~.darkmodeToggle {
+  background: #1e2e54;
+} 
+
+.animatedBg {
+  position: fixed;
+  inset: 0;
+  background: #020617; /* cor escura base */
+  clip-path: circle(0% at 95% 5%);
+  transition: clip-path 1.4s ease-in-out;
+  z-index: -1;
+  pointer-events: none;
+}
+  
+.darkmodeinput:checked ~ .animatedBg {
+  clip-path: circle(150% at 50% 50%);
+}
+
 
 /* ================= NAV ================= */
 nav.menu {
@@ -69,13 +177,25 @@ nav.menu {
 .menu-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  align-items: center;
+  gap: 1rem;
 }
 
 .menu-links a {
   text-decoration: none;
   color: var(--text);
-  font-size: 0.95rem;
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+}
+
+.menu-links a:hover {
+  background: color-mix(in srgb, var(--accent) 15%, transparent);
 }
 
 .menu-links .highlight {
@@ -205,6 +325,8 @@ nav.menu {
   color: var(--accent);
   border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
 }
+
+
 
 
 /* ================= FOOTER ================= */

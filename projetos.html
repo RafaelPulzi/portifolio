@@ -11,37 +11,44 @@
 </head>
 
 <body>
-  <!-- ================= HEADER / NAV ================= -->
-  <header>
-    <nav class="menu" aria-label="Menu principal">
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <nav class="menu" aria-label="Navegação principal">
       <div class="menu-container">
         <a class="logo" href="index.html">Rafael Atala Pulzi</a>
         <button class="menu-toggle" aria-label="Abrir menu">☰</button>
         <ul class="menu-links">
           <li>
-            <button
-              id="themeToggle"
-              class="theme-toggle"
-              aria-label="Alternar tema">
-              🌙
-            </button>
+            <label class="darkmodeLabel">
+              <input type="checkbox" id="dark-toggle" class="darkmodeinput">
+
+              <img src="./images/svg-miniatures/sunny.svg"
+                  alt="Modo claro"
+                  class="darkmodeSun">
+
+              <img src="./images/svg-miniatures/moon.svg"
+                  alt="Modo escuro"
+                  class="darkmodeMoon">
+
+              <span class="darkmodeToggle"></span>
+            </label>
           </li>
 
           <li>
-            <a
-              href="images/Curriculo Rafael Atala Pulzi  +55 11 96477-0108.pdf"
-              target="_blank"
-              rel="noopener noreferrer">
+            <a href="images/Curriculo Rafael Atala Pulzi  +55 11 96477-0108.pdf"
+               target="_blank"
+               rel="noopener">
               Currículo
             </a>
           </li>
 
-          <li><a href="projetos.html" aria-current="page">Projetos</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
           <li><a href="Certificados.html">Certificados</a></li>
-          <li><a href="#contato" class="highlight">Contate-me</a></li>
+          <li><a href="contato.html" class="highlight">Contate-me</a></li>
         </ul>
       </div>
     </nav>
+    <div class="animatedBg"></div>
   </header>
 
   <!-- ================= MAIN ================= -->

@@ -14,22 +14,45 @@
 
 <body>
 
-  <!-- NAV -->
-  <nav class="menu" aria-label="Navegação principal">
-    <div class="menu-container">
-      <a class="logo" href="index.html">Rafael Atala Pulzi</a>
-      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
-      <ul class="menu-links">
-        <li><button id="themeToggle" class="theme-toggle" aria-label="Alternar tema">
-          🌙
-        </button></li>
-        <li><a href="images/Curriculo Rafael Atala Pulzi  +55 11 96477-0108.pdf" target="_blank">Currículo</a></li>
-        <li><a href="projetos.html">Projetos</a></li>
-        <li><a href="certificados.html" aria-current="page">Certificados</a></li>
-        <li><a href="#contato" class="highlight">Contate-me</a></li>
-      </ul>
-    </div>
-  </nav>
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <nav class="menu" aria-label="Navegação principal">
+      <div class="menu-container">
+        <a class="logo" href="index.html">Rafael Atala Pulzi</a>
+        <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+        <ul class="menu-links">
+          <li>
+            <label class="darkmodeLabel">
+              <input type="checkbox" id="dark-toggle" class="darkmodeinput">
+
+              <img src="./images/svg-miniatures/sunny.svg"
+                  alt="Modo claro"
+                  class="darkmodeSun">
+
+              <img src="./images/svg-miniatures/moon.svg"
+                  alt="Modo escuro"
+                  class="darkmodeMoon">
+
+              <span class="darkmodeToggle"></span>
+            </label>
+          </li>
+
+          <li>
+            <a href="images/Curriculo Rafael Atala Pulzi  +55 11 96477-0108.pdf"
+               target="_blank"
+               rel="noopener">
+              Currículo
+            </a>
+          </li>
+
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="Certificados.html">Certificados</a></li>
+          <li><a href="contato.html" class="highlight">Contate-me</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="animatedBg"></div>
+  </header>
 
   <!-- CONTEÚDO -->
   <main class="page-container">
@@ -59,7 +82,7 @@
     <section class="certificates-carousel" aria-label="Lista de certificados">
 
       <button class="carousel-btn left" id="prevBtn" aria-label="Anterior">
-        ‹
+        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M249.38 336L170 256l79.38-80M181.03 256H342"/><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
       </button>
 
       <div class="certificates-viewport">
@@ -67,7 +90,7 @@
       </div>
 
       <button class="carousel-btn right" id="nextBtn" aria-label="Próximo">
-        ›
+        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M262.62 336L342 256l-79.38-80M330.97 256H170"/><path d="M256 448c106 0 192-86 192-192S362 64 256 64 64 150 64 256s86 192 192 192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
       </button>
 
     </section>

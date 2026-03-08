@@ -135,3 +135,29 @@ async function processar() {
 }
 
 processar();
+
+
+/* ================= MOVIMENTO SUAVE GRID ================= */
+
+
+
+const grid = document.getElementById("certificatesGrid");
+
+let page = 0;
+
+function updateCarousel(){
+  const viewport = document.querySelector(".certificates-viewport");
+  const width = viewport.offsetWidth;
+
+  grid.style.transform = `translateX(-${page * width}px)`;
+}
+
+document.getElementById("nextBtn").addEventListener("click", () => {
+  page++;
+  updateCarousel();
+});
+
+document.getElementById("prevBtn").addEventListener("click", () => {
+  page--;
+  updateCarousel();
+});
