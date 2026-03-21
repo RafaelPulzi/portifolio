@@ -1,19 +1,19 @@
 /* ================= CONTAINER ================= */
 .page-container {
   max-width: 1200px;
-  margin: 12px auto 4rem;
-  padding: 0 2rem;
+  margin: 8.4px auto 2.8rem;
+  padding: 0 1.4rem;
 }
 
 /* ================= HEADER ================= */
 .page-header {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2.1rem;
 }
 
 .page-header h1 {
-  font-size: 2rem;
-  margin-bottom: .5rem;
+  font-size: 1.4rem;
+  margin-bottom: .35rem;
 }
 
 .page-header p {
@@ -29,28 +29,28 @@
 
 .certificates-controls input,
 .certificates-controls select {
-  padding: 0.8rem 1rem;
-  border-radius: 10px;
+  padding: 0.56rem 0.7rem;
+  border-radius: 7px;
   border: 1px solid var(--border);
   background: var(--input-bg);
   color: var(--text);
-  font-size: 0.95rem;
+  font-size: 0.665rem;
 }
 
 
 .tech-filters {
   display: flex;
   flex-wrap: wrap;
-  gap: .5rem;
+  gap: .35rem;
 }
 
 .tech-filters button {
-  padding: .4rem .9rem;
+  padding: .28rem .63rem;
   border-radius: 999px;
   border: 1px solid var(--accent);
   background: transparent;
   color: var(--accent);
-  font-size: .95rem;
+  font-size: .665rem;
   cursor: pointer;
 }
 
@@ -66,8 +66,8 @@
 
 .certificates-viewport {
   overflow: hidden;
-  padding: 0 1rem;
-  padding-top: 1rem;
+  padding: 0 0.7rem;
+  padding-top: 0.7rem;
   scroll-behavior: smooth;
   touch-action: pan-y;
 }
@@ -77,8 +77,8 @@
   display: grid;
   grid-auto-flow: column;
   grid-template-rows: repeat(3, 1fr);
-  grid-auto-columns: calc((100% - 3rem) / 3);
-  gap: 1.5rem;
+  grid-auto-columns: calc((100% - 2.1rem) / 3);
+  gap: 1.05rem;
   transform: translateZ(0);
   backface-visibility: hidden;
   transition: transform .55s cubic-bezier(.22,.61,.36,1);
@@ -88,8 +88,8 @@
 .certificate-card {
   background: var(--card);
   border: 1px solid var(--border); 
-  border-radius: 18px; 
-  padding: 1rem; 
+  border-radius: 13px; 
+  padding: 0.7rem; 
   cursor: pointer; 
   transition: transform .2s ease, 
   box-shadow .2s ease;
@@ -104,9 +104,9 @@
 
 .certificate-image {
   width: 100%; 
-  height: 160px; 
+  height: 112px; 
   overflow: hidden; 
-  border-radius: 12px;
+  border-radius: 8px;
   display: flex; 
   align-items: center; 
   justify-content: center;
@@ -121,12 +121,12 @@
 }
 
 .certificate-card h3 {
-  font-size: 1.15rem;
-  margin-bottom: .4rem;
+  font-size: 0.805rem;
+  margin-bottom: .28rem;
 }
 
 .certificate-card p {
-  font-size: 1rem;
+  font-size: 0.7rem;
   color: var(--muted);
 }
 
@@ -135,22 +135,22 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 42px;
-  height: 42px;
+  width: 29.4px;
+  height: 29.4px;
   border-radius: 50%;
   border: none;
   background: var(--accent);
   color: #fff;
-  font-size: 1.6rem;
+  font-size: 1.12rem;
   cursor: pointer;
 }
 
 .carousel-btn.left {
-  left: -60px;
+  left: -42px;
 }
 
 .carousel-btn.right {
-  right: -60px;
+  right: -42px;
 }
 
 .carousel-btn:disabled {

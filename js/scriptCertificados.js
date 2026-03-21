@@ -73,6 +73,7 @@ function aplicarFiltros() {
 }
 
 /* ================= RENDER ================= */
+
 function render() {
 
   grid.innerHTML = '';
@@ -176,13 +177,11 @@ yearFilter.addEventListener('change', aplicarFiltros);
 
 function atualizarSlide(){
 
-  const viewport = document.querySelector(".certificates-viewport");
-  const largura = viewport.offsetWidth;
+  const largura = grid.parentElement.offsetWidth;
 
   grid.style.transform = `translateX(-${pagina * largura}px)`;
 
 }
-
 
 /* ================= MOBILE ================= */
 let touchStartX = 0;

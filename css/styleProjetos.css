@@ -1,7 +1,8 @@
     .filters {
       display: flex;
-      gap: 1rem;
-      margin: 1.5rem 0;
+      gap: 0.7rem;
+      margin: 1.05rem 0;
+      
       flex-wrap: wrap;
     }
 
@@ -10,8 +11,9 @@
       background: var(--input-bg);
       border: 1px solid var(--border);
       color: var(--text);
-      padding: 0.6rem 1rem; 
-      border-radius: 12px; 
+      padding: 0.42rem 0.7rem; 
+      border-radius: 8px; 
+      font-size: 1rem;
       outline: none;
     }
 
@@ -19,7 +21,7 @@
     .catalog {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
+    gap: 1.05rem;
     }
 
     /* Responsividade */
@@ -46,8 +48,8 @@
 .project-card {
   background: var(--card);
   border: 1px solid var(--border);
-  border-radius: 18px;
-  padding: 1.4rem;
+  border-radius: 13px;
+  padding: 0.98rem;
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
   transition: transform .25s ease, box-shadow .25s ease;
   cursor: pointer;
@@ -59,30 +61,30 @@
 }
 
 .project-card h3 {
-  font-size: 1rem;
-  margin-bottom: .4rem;
+  font-size: 0.7rem;
+  margin-bottom: .28rem;
 }
 
 .project-card p {
-  font-size: .9rem;
+  font-size: .63rem;
   color: var(--muted);
 }
 
 /* TAGS */
 .project-tags {
-  margin-top: 1rem;
+  margin-top: 0.7rem;
   display: flex;
   flex-wrap: wrap;
-  gap: .4rem;
+  gap: .28rem;
 }
 
 .project-tags span {
   background: var(--tag-bg);
   color: var(--tag-text);
   border: 1px solid var(--tag-border);
-  padding: .3rem .7rem;
+  padding: .21rem .49rem;
   border-radius: 999px;
-  font-size: .75rem;
+  font-size: .525rem;
   font-weight: 500;
   transition: background .25s ease, color .25s ease, border .25s ease;
 }
@@ -94,8 +96,8 @@
     /* ================= CONTAINER ================= */
 .page-container {
   max-width: 1200px;
-  margin: 12px auto 4rem;
-  padding: 0 2rem;
+  margin: 8.4px auto 2.8rem;
+  padding: 0 1.4rem;
 }
 
 /* ================= GRID PROJETOS ================= */
@@ -116,4 +118,111 @@
   .catalog {
     grid-template-columns: 1fr;
   }
+}
+
+
+
+/* ================= MODAL ================= */
+
+.project-modal{
+  position: fixed;
+  inset:0;
+  background: rgba(0,0,0,.6);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  opacity:0;
+  pointer-events:none;
+  transition:.3s ease;
+  z-index:999;
+}
+
+.project-modal.open{
+  opacity:1;
+  pointer-events:auto;
+}
+
+.project-modal-content{
+  background:var(--card);
+  width:min(630px,90%);
+  max-height:85vh;
+  overflow-y:auto;
+  border-radius:14px;
+  padding:1.4rem;
+  position:relative;
+  animation: modalOpen .35s ease;
+}
+
+@keyframes modalOpen{
+  from{
+    transform:translateY(20px);
+    opacity:0;
+  }
+  to{
+    transform:translateY(0);
+    opacity:1;
+  }
+}
+
+.modal-close{
+  position:absolute;
+  top:0.7rem;
+  right:0.7rem;
+  border:none;
+  background:transparent;
+  font-size:0.98rem;
+  cursor:pointer;
+}
+
+.modal-description{
+  margin:0.7rem 0 1.05rem;
+  color:var(--muted);
+}
+
+/* GALERIA */
+
+.modal-gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+  gap:0.7rem;
+  margin-bottom:1.05rem;
+}
+
+.modal-gallery img{
+  width:100%;
+  border-radius:12px;
+}
+
+/* TECH */
+
+.modal-tech{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.35rem;
+  margin-bottom:1.05rem;
+}
+
+.modal-tech span{
+  background:var(--tag-bg);
+  color:var(--tag-text);
+  border:1px solid var(--tag-border);
+  padding:.21rem .56rem;
+  border-radius:999px;
+  font-size:.56rem;
+}
+
+/* LINKS */
+
+.modal-links{
+  display:flex;
+  gap:0.7rem;
+}
+
+.modal-links a{
+  background:var(--accent);
+  color:#fff;
+  padding:.35rem 0.7rem;
+  border-radius:999px;
+  text-decoration:none;
+  font-size:.63rem;
 }
