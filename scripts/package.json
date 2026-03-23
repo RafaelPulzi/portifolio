@@ -1,6 +1,13 @@
 {
+  "name": "portfolio-scripts",
+  "version": "1.0.0",
+  "scripts": {
+    "certs": "node gerar-certificados.js",
+    "certs:watch": "node watch-certificados.js"
+  },
   "dependencies": {
     "pdf-poppler": "^0.2.3",
-    "sharp": "^0.34.5"
+    "sharp": "^0.34.5",
+    "chokidar": "^3.6.0"
   }
 }

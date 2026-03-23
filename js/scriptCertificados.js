@@ -11,7 +11,7 @@ const yearFilter = document.getElementById('yearFilter');
 const techFilters = document.getElementById('techFilters');
 
 /* ================= LOAD ================= */
-fetch('data/certificados.json')
+fetch(`data/certificados.json?nocache=${Date.now()}`)
   .then(res => res.json())
   .then(data => {
     certificados = data;

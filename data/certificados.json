@@ -36,6 +36,82 @@
     "imagem": "/images/certificadosImagens/3 simposio interno de sustentabilidade e tecnologia UNIP.webp"
   },
   {
+    "id": "certificado---cibersegurança-no-teletrabalho",
+    "nome": "Certificado   Cibersegurança no Teletrabalho",
+    "descricao": "Certificação profissional.",
+    "tecnologias": [],
+    "instituicao": "",
+    "ano": "",
+    "arquivo": "/images/certificados/Certificado - Cibersegurança no Teletrabalho.pdf",
+    "imagem": "/images/certificadosImagens/Certificado - Cibersegurança no Teletrabalho.webp"
+  },
+  {
+    "id": "certificado---código-de-ética-e-conduta",
+    "nome": "Certificado   Código de Ética e Conduta",
+    "descricao": "Certificação profissional.",
+    "tecnologias": [],
+    "instituicao": "",
+    "ano": "",
+    "arquivo": "/images/certificados/Certificado - Código de Ética e Conduta.pdf",
+    "imagem": "/images/certificadosImagens/Certificado - Código de Ética e Conduta.webp"
+  },
+  {
+    "id": "certificado---introdução-ao-azure-devops",
+    "nome": "Certificado   Introdução ao Azure DevOps",
+    "descricao": "Certificação profissional.",
+    "tecnologias": [
+      "Azure"
+    ],
+    "instituicao": "",
+    "ano": "",
+    "arquivo": "/images/certificados/Certificado - Introdução ao Azure DevOps.pdf",
+    "imagem": "/images/certificadosImagens/Certificado - Introdução ao Azure DevOps.webp"
+  },
+  {
+    "id": "certificado---lei-geral-de-proteção-de-dados-(lgpd)",
+    "nome": "Certificado   Lei Geral de Proteção de Dados (LGPD)",
+    "descricao": "Certificação profissional.",
+    "tecnologias": [
+      "Data"
+    ],
+    "instituicao": "",
+    "ano": "",
+    "arquivo": "/images/certificados/Certificado - Lei Geral de Proteção de Dados (LGPD).pdf",
+    "imagem": "/images/certificadosImagens/Certificado - Lei Geral de Proteção de Dados (LGPD).webp"
+  },
+  {
+    "id": "certificado---workshop-iso-20000-2018",
+    "nome": "Certificado   Workshop ISO 20000 2018",
+    "descricao": "Certificação profissional.",
+    "tecnologias": [],
+    "instituicao": "",
+    "ano": "",
+    "arquivo": "/images/certificados/Certificado - Workshop ISO 20000-2018.pdf",
+    "imagem": "/images/certificadosImagens/Certificado - Workshop ISO 20000-2018.webp"
+  },
+  {
+    "id": "certificado---workshop-sgi",
+    "nome": "Certificado   Workshop SGI",
+    "descricao": "Certificação profissional.",
+    "tecnologias": [],
+    "instituicao": "",
+    "ano": "",
+    "arquivo": "/images/certificados/Certificado - Workshop SGI.pdf",
+    "imagem": "/images/certificadosImagens/Certificado - Workshop SGI.webp"
+  },
+  {
+    "id": "certificado-análise-nota-fiscal-de-material",
+    "nome": "Certificado Análise Nota Fiscal de Material",
+    "descricao": "Certificação profissional.",
+    "tecnologias": [
+      "Inteligência Artificial"
+    ],
+    "instituicao": "",
+    "ano": "",
+    "arquivo": "/images/certificados/Certificado Análise Nota Fiscal de Material.pdf",
+    "imagem": "/images/certificadosImagens/Certificado Análise Nota Fiscal de Material.webp"
+  },
+  {
     "id": "certificado-data-viking",
     "nome": "Certificado Data Viking",
     "descricao": "Certificação profissional.",
@@ -48,6 +124,38 @@
     "imagem": "/images/certificadosImagens/Certificado Data Viking.webp"
   },
   {
+    "id": "certificado-de-conclusão-crece-wps-2025",
+    "nome": "Certificado de conclusão CRECE WPS 2025",
+    "descricao": "Certificação profissional.",
+    "tecnologias": [],
+    "instituicao": "",
+    "ano": "",
+    "arquivo": "/images/certificados/Certificado de conclusão CRECE WPS 2025.pdf",
+    "imagem": "/images/certificadosImagens/Certificado de conclusão CRECE WPS 2025.webp"
+  },
+  {
+    "id": "certificado-de-conclusão-workshop-reforma-tributária-sonda",
+    "nome": "Certificado de Conclusão Workshop Reforma Tributária SONDA",
+    "descricao": "Certificação profissional.",
+    "tecnologias": [
+      "Inteligência Artificial"
+    ],
+    "instituicao": "",
+    "ano": "",
+    "arquivo": "/images/certificados/Certificado de Conclusão Workshop Reforma Tributária SONDA.pdf",
+    "imagem": "/images/certificadosImagens/Certificado de Conclusão Workshop Reforma Tributária SONDA.webp"
+  },
+  {
+    "id": "certificado-introdução-a-power-bi",
+    "nome": "Certificado Introdução a Power Bi",
+    "descricao": "Certificação profissional.",
+    "tecnologias": [],
+    "instituicao": "",
+    "ano": "",
+    "arquivo": "/images/certificados/Certificado Introdução a Power Bi.pdf",
+    "imagem": "/images/certificadosImagens/Certificado Introdução a Power Bi.webp"
+  },
+  {
     "id": "certificado-linguagem-de-programacao-java---basico---5h",
     "nome": "Certificado Linguagem de Programacao Java   basico   5h",
     "descricao": "Certificação profissional.",
@@ -58,6 +166,18 @@
     "ano": "",
     "arquivo": "/images/certificados/Certificado Linguagem de Programacao Java - basico - 5h.pdf",
     "imagem": "/images/certificadosImagens/Certificado Linguagem de Programacao Java - basico - 5h.webp"
+  },
+  {
+    "id": "certificado-masterclass-aplicações-e-impactos-da-inteligência-artificial-na-sociedade-e-nas-empresas",
+    "nome": "Certificado Masterclass aplicações e impactos da Inteligência Artificial na sociedade e nas empresas",
+    "descricao": "Certificação profissional.",
+    "tecnologias": [
+      "Inteligência Artificial"
+    ],
+    "instituicao": "",
+    "ano": "",
+    "arquivo": "/images/certificados/Certificado Masterclass aplicações e impactos da Inteligência Artificial na sociedade e nas empresas.pdf",
+    "imagem": "/images/certificadosImagens/Certificado Masterclass aplicações e impactos da Inteligência Artificial na sociedade e nas empresas.webp"
   },
   {
     "id": "certificadopoobradesco-5-horas",
@@ -100,6 +220,16 @@
     "imagem": "/images/certificadosImagens/Discovery Trilha Conectar.webp"
   },
   {
+    "id": "ef-set-certificate",
+    "nome": "EF SET Certificate",
+    "descricao": "Certificação profissional.",
+    "tecnologias": [],
+    "instituicao": "",
+    "ano": "",
+    "arquivo": "/images/certificados/EF SET Certificate.pdf",
+    "imagem": "/images/certificadosImagens/EF SET Certificate.webp"
+  },
+  {
     "id": "fundamentos-de-business-intelligence-(bi)",
     "nome": "Fundamentos de Business Intelligence (BI)",
     "descricao": "Certificação profissional.",
@@ -133,5 +263,15 @@
     "ano": "",
     "arquivo": "/images/certificados/Master Network Automation with Python for Network Engineers.pdf",
     "imagem": "/images/certificadosImagens/Master Network Automation with Python for Network Engineers.webp"
+  },
+  {
+    "id": "workshop-da-iso-9001_2015",
+    "nome": "Workshop da ISO 9001 2015",
+    "descricao": "Certificação profissional.",
+    "tecnologias": [],
+    "instituicao": "",
+    "ano": "",
+    "arquivo": "/images/certificados/Workshop da ISO 9001_2015.pdf",
+    "imagem": "/images/certificadosImagens/Workshop da ISO 9001_2015.webp"
   }
 ]

@@ -61,12 +61,12 @@
 }
 
 .project-card h3 {
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   margin-bottom: .28rem;
 }
 
 .project-card p {
-  font-size: .63rem;
+  font-size: .73rem;
   color: var(--muted);
 }
 
@@ -84,7 +84,7 @@
   border: 1px solid var(--tag-border);
   padding: .21rem .49rem;
   border-radius: 999px;
-  font-size: .525rem;
+  font-size: .590rem;
   font-weight: 500;
   transition: background .25s ease, color .25s ease, border .25s ease;
 }
