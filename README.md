@@ -25,38 +25,6 @@ This project was built deliberately without heavy frontend frameworks (like Reac
 * **Logic:** Vanilla JavaScript (ES6+, Async/Await, Fetch API, Intersection Observer)
 * **Integrations:** GitHub REST API, EmailJS
 
-## ⚙️ The Cognitive Pipeline
-
-The development workflow showcased in this portfolio mirrors my real-world engineering approach:
-`Idea` ➔ `Ralph (Orchestration)` ➔ `Claude Opus (Reasoning)` ➔ `Dev Containers (Isolation)` ➔ `GitHub (Versioning)` ➔ `Production`
-
-## 🚀 Running Locally
-
-To run this project locally and test the dynamic integrations:
-
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/RafaelPulzi/portifolio.git](https://github.com/RafaelPulzi/portifolio.git)
-
-```
-
-2. Navigate to the directory:
-```bash
-cd portifolio
-
-```
-
-
-3. Open `index.html` in your browser, or use a local development server (like VS Code Live Server) to prevent CORS issues when loading local PDFs/iframes.
-
-## 🔧 Configuration (For Forking)
-
-If you wish to fork this design for your own use, update the following variables in `index.html`:
-
-1. **GitHub API:** Change `const GITHUB_USER = 'RafaelPulzi';` in the `<script>` block to your GitHub username.
-2. **EmailJS:** Replace the `emailjs.init()`, Service ID, and Template ID inside the contact form logic with your own keys from [EmailJS](https://www.emailjs.com/).
-3. **Assets:** Replace the paths in the `certificates` array and hero buttons with your own PDF files.
-
 ---
 
 *The universe is, and we are.*
